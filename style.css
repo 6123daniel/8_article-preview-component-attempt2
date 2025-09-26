@@ -1,0 +1,111 @@
+:root {
+    --blue-900: hsl(217, 19%, 35%);
+    --blue-700: hsl(214, 17%, 51%);
+    --blue-500: hsl(212, 23%, 69%);
+    --blue-200: hsl(210, 46%, 95%);
+
+    --weight-700: 700;
+    --weight-500: 500;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    font-family: 'Manrope', sans-serif;
+}
+
+main {
+    display: flex;
+    max-width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid green;
+}
+
+.drawers {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 25% 100%;
+}
+
+.section--1 {
+    width: 40%;
+    border: 1px solid red;
+}
+
+h1 {
+    margin-top: 0;
+    /* padding: 0; */
+    font-size: 1.5rem;
+    font-weight: var(--weight-700);
+    color: var(--blue-900)
+}
+
+p {
+    font-size: 1rem;
+    font-weight: var(--weight-500);
+    color: var(--blue-700)
+}
+
+.section--2 {
+    width: 60%;
+    padding: 3em;
+}
+
+.section__author {
+    display: flex;
+    flex-direction: row;
+    border: red 1px solid;
+    align-items: center;
+    gap: 1em;
+    /* padding: 0 1em; */
+}
+
+.section__author__picture {
+    width: 10%;
+    border-radius: 1000px;
+}
+
+.section__author__name, 
+.section__author__date {
+    margin: 0;
+}
+
+.section__author__name {
+    font-weight: var(--weight-700);
+    color: var(--blue-900);
+}
+
+.section__author__date {
+    color: var(--blue-500);
+}
+
+.section__author__shareButton {
+    margin-left: auto;
+    /* background-color: aqua; */
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+    /* align-content: center; */
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.ButtonImg {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    transform: translate(0px, -2px);
+}
+

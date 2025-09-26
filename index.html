@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Article preview component</title>
-
+  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,22 +19,38 @@
   </style>
 </head>
 <body>
+  <main>
+    <section class="section section--1">
+      <img class="drawers" src="images/drawers.jpg" alt="interior with drawer"/>
+    </section>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <section class="section section--2">
+      <h1 class="section__title">
+        Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home
+      </h1>
+      <p class="section__p">
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.
+      </p>
+      <div class="section__author">
+        <img class="section__author__picture" src="images/avatar-michelle.jpg" alt="Michelle Appleton"/>
+        <div class="section__author__text">
+          <p class="section__author__name">Michelle Appleton</p>
+          <p class="section__author__date">28 Jun 2020</p>
+        </div>
+        <div class="section__author__shareButton">
+          <img class="ButtonImg" src="./images/icon-share.svg"/>
+        </div>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+      </div>
+    </section>
+  </main>
 
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">6123daniel</a>.
+  </footer>
 </body>
 </html>
